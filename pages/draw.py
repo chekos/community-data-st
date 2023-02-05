@@ -4,7 +4,7 @@ from folium.plugins import Draw
 
 from streamlit_folium import st_folium
 
-m = folium.Map(location=[37.8181063, -122.2851045], zoom_start=5)
+m = folium.Map(location=[37.8181063, -122.2851045], zoom_start=15)
 Draw(export=True).add_to(m)
 
 c1, c2 = st.columns(2)
