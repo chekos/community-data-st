@@ -2,3 +2,4 @@ black==23.1.0
 streamlit==1.17.0
 streamlit-folium==0.11
 folium==0.14
+geocoder
