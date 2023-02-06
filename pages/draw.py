@@ -1,5 +1,7 @@
 import folium
 import streamlit as st
+import geocoder
+
 from folium.plugins import Draw
 
 from streamlit_folium import st_folium
@@ -13,3 +15,7 @@ with c1:
 
 with c2:
     st.write(output)
+    coords = output["last_clicked"]
+    if coords:
+      g = geocoder.google([coords["lat"], coords["long"]], method = "reverse")
+      st.write(g)
