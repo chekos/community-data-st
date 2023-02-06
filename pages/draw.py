@@ -17,5 +17,5 @@ with c2:
     st.write(output)
     coords = output["last_clicked"]
     if coords:
-      g = geocoder.google([coords["lat"], coords["long"]], method = "reverse")
+      g = geocoder.google([coords["lat"], coords["lng"]], method = "reverse")
       st.write(g)
