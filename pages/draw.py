@@ -20,4 +20,4 @@ if coords:
     st.write(lat)
     st.write(lng)
     g = geocoder.google([lat, lng], method = "reverse")
-    st.write(g.json)
+    st.write(g)
