@@ -16,5 +16,8 @@ coords = output["last_clicked"]
 if coords:
     lat = coords.get("lat", 37.818)
     lng = coords.get("lng", -122.285)
+
+    st.write(lat)
+    st.write(lng)
     g = geocoder.google([lat, lng], method = "reverse")
     st.write(g.json)
